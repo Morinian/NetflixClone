@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: Arial;
+    background-color: #000000;
+}
+
+
+/*HEADER*/
+
+main{
+    width: 100%;
+}
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+
+    transition: background-color 0.3s; 
+    background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
+}
+header.scroll {
+    background-color: black;
+}
+#esq a:hover{
+    color: #fff;
+}
+#menu{
+    font-size: 15px;
+}
+#esquerdona{
+    width: 65%;
+    height: 80px;
+
+    position: relative;
+    float: left;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+#esq a{
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-decoration: none;
+    color: #cfcfcf;
+}
+#logo img{
+    width: 100px;
+
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+
+
+#dir{
+    width: 35%;
+    height: 80px;
+
+    position: relative;
+    float: left;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+#dir a{
+    text-decoration: none;
+    color: #cfcfcf;
+}
+#dir a:hover{
+    color:#fff;
+}
+#seta{
+    padding-right: 70px;
+}
+svg{
+
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+#dir img{
+    width: 35px;
+}
+
+
+/*Painel*/
+
+#Painel{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+}
+video{
+    width: 100%;
+}
+#titulo{
+    position: absolute;
+    z-index: 1;
+
+    color: #fff;
+    
+    padding-left: 6%;
+    padding-top: 6%;
+}
+#titulo a{
+   text-decoration: none;
+   color: black;
+}
+#titulo img{
+   width: 150px;
+}
+#titulo svg{
+    color: black;
+}
+#butao{
+    margin-top: 30px;
+}
+#botao1{
+    position: relative;
+    float: left;
+    background-color: #fff;
+
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 30px;
+}
+#botao1 a{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#botao2{
+    position: relative;
+    float: left;
+    background-color: #ffffff42;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 210px;
+    height: 40px;
+
+    margin-left: 20px;
+    border-radius: 5px;
+    padding-right: 30px;
+}
+#botao2 a,#botao2 svg{
+   color: #fff;
+   font-weight: bold;
+}
+#titulo p{
+    margin-top: 10px;
+}
+
+/*Carrosel imagens*/
+#carrossel,#carrossel2 {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+#container, #container2 {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    display: inline-flex;
+    transition: 0.6s ease-in-out;
+}
+
+#container #item, #container2 #item2 {
+    position: relative;
+    margin: 0 7px;
+    width: 225px;
+    height: 100%;
+    background: gray;
+    z-index: 0;
+}
+
+#container #item img, #container2 #item2 img {
+    width: 100%;
+    height: 100%;
+}
+
+#btnleft, #btnleft2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 1;
+
+    background-color: #000000;
+    color: #fff;
+    font-size: 30px;
+}
+
+#btnright, #btnright2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 1;
+
+    background-color: #000000;
+    color: #fff;
+    font-size: 30px;
+}
+
+#container #limitador, #container2 #limitador2 {
+    position: absolute;
+    margin: 0 7px;
+    width: 150px;
+    height: 100%;
+    opacity: 0;
+    right: 0;
+    z-index: 1;
+    background: blue;
+}
+h3{
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+#h32{
+    margin-top: 100px;
+}
+
+/*FOOTER*/
+
+footer {
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin: 10px;
+    margin-top: 80px;
+}
