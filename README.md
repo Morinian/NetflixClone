@@ -5,3 +5,8 @@ Clone da Netflix com HTML e CSS - pouco de JS ( carrossel e header)
   <p align="center">
     <img src="https://skillicons.dev/icons?i=html,css,javascript">
   </p>
+
+<h2>Aplicação</h2>
+  <p align="center">
+    <img src="imagens/imgReadme.png">
+  </p>
